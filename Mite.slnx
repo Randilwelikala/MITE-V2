@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Mite.Api/Mite.Api.csproj" />
+  <Project Path="Mite.Core/Mite.Core.csproj" />
+  <Project Path="Mite.Infrastructure/Mite.Infrastructure.csproj" />
+</Solution>
