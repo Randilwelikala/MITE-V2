@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Mite.Core.Entities
+﻿namespace Mite.Core.Entities
 {
-    internal class Students
+    public class Student
     {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Grade { get; set; } = string.Empty;
+
     }
 }

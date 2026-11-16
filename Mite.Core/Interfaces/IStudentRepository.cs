@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Mite.Core.Entities; 
 
-namespace Mite.Core.Entities.Interfaces
+namespace Mite.Core.Interfaces
 {
-    internal interface IStudentRepository
+    public interface IStudentRepository
     {
+        Task<List<Student>> GetAllAsync();
+        Task AddAsync(Student student);
+
     }
 }
