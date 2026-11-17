@@ -7,7 +7,7 @@ namespace Mite.Infrastructure.Data
     public class AppDbContext(DbContextOptions<AppDbContext> option) : DbContext(option)
     {
         public DbSet<Student> Students => Set<Student>();
-        public DbSet<>
+     
 
     }
 }
