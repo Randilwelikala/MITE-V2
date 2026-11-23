@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Mite.Core.Entities;
 
 namespace Mite.Infrastructure.Data
