@@ -5,7 +5,7 @@ using Mite.Infrastructure.Data;
 
 namespace Mite.Infrastructure.Repositories
 {
-    public class StudentRepositories(AppDbContext context) : IStudentRepository
+    public class StudentRepository(AppDbContext context) : IStudentRepository
     {
         public async Task<List<Student>> GetAllAsync()
         {
@@ -13,7 +13,7 @@ namespace Mite.Infrastructure.Repositories
                 .AsNoTracking()
                 .ToListAsync();
         }
-        public async Task TaskAsync(Student student)
+        public async Task AddAsync(Student student)
         {
             await context.Students.AddAsync(student);
             await context.SaveChangesAsync();
